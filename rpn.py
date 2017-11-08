@@ -27,9 +27,13 @@ def calculate(myarg):
     if len(stack) != 1:
         raise TypeError("Too many parameters")
     return stack.pop()
+
 def foo(bar):
     return 1
 
+def bar(foo):
+    hello = foo + 6
+    return hello -3
 def main():
     while True:
         result = calculate(input("rpn calc> "))
