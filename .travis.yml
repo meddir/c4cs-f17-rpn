@@ -1,6 +1,11 @@
   language: python
+  install:
+    - pip install coveralls
   python:
     - 3.5
     - nightly
   script:
-    - py.test
+    - coverage run test_rpn.py 
+   after_success:
+    - coveralls
+  
