@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 import operator
-
+import readline
+#from termcolor import colored
 
 operators = {
     '+': operator.add,
@@ -38,7 +39,7 @@ def main():
     while True:
         result = calculate(input("rpn calc> "))
         print("Result: ", result)
-
+        #print(colored('Result: ', 'green'), colored(result, 'blue')
 if __name__ == '__main__':
     main()
 
