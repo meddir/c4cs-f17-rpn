@@ -27,6 +27,8 @@ def calculate(myarg):
     if len(stack) != 1:
         raise TypeError("Too many parameters")
     return stack.pop()
+def foo(bar):
+    pass
 
 def main():
     while True:
