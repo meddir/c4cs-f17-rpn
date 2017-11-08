@@ -3,4 +3,4 @@
     - 3.5
     - nightly
   script:
-    - pytes
+    - py.test
