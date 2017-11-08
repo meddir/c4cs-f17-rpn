@@ -18,6 +18,6 @@ class TestBasics(unittest.TestCase):
         result = rpn.calculate("6 3 /")
         self.assertEqual(2, result)
     def test_divide(self):
-        result = rpn.calculate("2 4 **")
-        self.assertEqual(16, result)
+        result = rpn.calculate("2 3 ^")
+        self.assertEqual(8, result)
 
